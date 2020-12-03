@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek </title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*css reset*/
+    body
+    {
+        margin: 2px;
+        padding: 2px;
+        background-image: url('img.jpg');
+        background-size:cover;
+    }
+    .left{
+    left: 34px;
+    top: 20px;
+    position: absolute;
+    display: inline-block;
+}
+.left img {
+    width: 120px;
+    height: 100px;
+
+}
+.left div{
+    text-align: center;
+    color: chartreuse;
+
+}
+.mid{
+    display: block;
+    width: 40%;
+    margin:15px auto;
+}
+.right{
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+}
+.navbar{
+    display: inline-block;
+    font-size: 20px;
+}
+.navbar li{
+    display: inline-block;
+
+}
+.navbar li a{
+    color:white;
+    text-decoration: none;
+    padding:25px 20px;
+}
+    .navbar li a:hover  {
+    text-decoration: underline;
+    color: red;
+}
+    .navbar li a.active{
+    text-decoration: underline;
+    color: blue;
+    }
+    .btn{
+        margin: 0px 9px;
+        padding: 2px 10px;
+        border: 2px solid gray;
+        border-radius: 5px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(27, 212, 27);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        color: white;
+    }
+    .form-group input{
+        text-align: left;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border:2px solid black ;
+        margin: 11px auto ;
+        border: radius 8px;
+        font-size: 25px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: inline-block;
+    }
+</style>
+<body>
+    <header class="header">
+    <!--left box for logo-->
+    <div class="left">
+        <img src="OIp.jpg" alt="error">
+        <div>Abhishek Fitness</div>
+    </div>
+    <!--mid box for navbar-->
+     <div class="mid">
+        <ul class="navbar">
+            <li><a href="#"class="active" >Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+    </div>
+    <!--right box for buttons-->
+    <div class="right">
+        <button class="btn"> Call Us Now </button>
+        <button class="btn"> Email Us </button>
+    </div>
+    </header>
+    <div class="container">
+        <h1>join the best gym of lucknow now</h1>
+        <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="adress" placeholder="address">
+        </div>
+        <div class="form-group">
+            <input type="text" name="emai id" placeholder="email@gmail.com">
+        </div>
+        <div class="form-group">
+           <input type="number" name="phone no." placeholder=" mobile number">
+        </div>
+        <button class="btn">submit</button>
+    </form>
+</div>
+</body>
+</html>
